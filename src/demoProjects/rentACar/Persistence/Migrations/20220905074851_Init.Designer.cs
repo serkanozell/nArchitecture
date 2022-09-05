@@ -11,7 +11,7 @@ using Persistence.Contexts;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(BaseDbContext))]
-    [Migration("20220815205354_Init")]
+    [Migration("20220905074851_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,12 +45,17 @@ namespace Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "BMW"
+                            Name = "Audi"
                         },
                         new
                         {
                             Id = 2,
                             Name = "Mercedes"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Bmw"
                         });
                 });
 #pragma warning restore 612, 618

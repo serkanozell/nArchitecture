@@ -43,12 +43,17 @@ namespace Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "BMW"
+                            Name = "Audi"
                         },
                         new
                         {
                             Id = 2,
                             Name = "Mercedes"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Bmw"
                         });
                 });
 #pragma warning restore 612, 618

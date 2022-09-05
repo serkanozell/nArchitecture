@@ -13,7 +13,7 @@ namespace Persistence.Contexts
     {
         protected IConfiguration Configuration { get; set; }
         public DbSet<Brand> Brands { get; set; }
-       
+
 
         public BaseDbContext(DbContextOptions dbContextOptions, IConfiguration configuration) : base(dbContextOptions)
         {
@@ -38,10 +38,10 @@ namespace Persistence.Contexts
 
 
 
-            Brand[] brandEntitySeeds = { new(1, "BMW"), new(2, "Mercedes") };
+            Brand[] brandEntitySeeds = { new(1, "Audi"), new(2, "Mercedes"), new(3, "Bmw") };
             modelBuilder.Entity<Brand>().HasData(brandEntitySeeds);
 
-           
+
         }
     }
 }

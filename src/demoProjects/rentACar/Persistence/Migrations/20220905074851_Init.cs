@@ -24,12 +24,17 @@ namespace Persistence.Migrations
             migrationBuilder.InsertData(
                 table: "Brands",
                 columns: new[] { "Id", "Name" },
-                values: new object[] { 1, "BMW" });
+                values: new object[] { 1, "Audi" });
 
             migrationBuilder.InsertData(
                 table: "Brands",
                 columns: new[] { "Id", "Name" },
                 values: new object[] { 2, "Mercedes" });
+
+            migrationBuilder.InsertData(
+                table: "Brands",
+                columns: new[] { "Id", "Name" },
+                values: new object[] { 3, "Bmw" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
